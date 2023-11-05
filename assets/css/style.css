@@ -1,0 +1,117 @@
+/* universal selector */
+* {
+  color: rgb(79, 72, 71);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* element selector */
+body {
+  position: relative;
+  top: 70px;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
+header, footer {
+  background-color: rgb(38, 97, 80);
+  height: 60px;
+  width: 100%;
+  border-bottom: 10px solid rgb(221, 175, 148);
+}
+
+/* class selector */
+
+/* Navigation bar */
+.nav-item {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 30px;
+
+}
+
+.nav-item li {
+  display: inline;
+  margin-left: 30px;
+}
+
+.nav-item li a {
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+/* Title and picture */
+.title {
+  background-color: rgb(253, 248, 245);
+  height: 560px;
+}
+
+.title h1 {
+  line-height: 70px;
+  margin-bottom: 6px;
+  font-size: 43px;
+}
+
+.title figcaption {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Contact me section */
+.contact-me {
+  height: 238px;
+  background-color: rgb(232, 206, 191);
+  border-top: 3px solid rgb(221, 175, 148);
+}
+
+.contact-me h2 {
+  font-size: 29px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Input container */
+.inputs-box {
+  border: 5px solid rgb(221, 175, 148);
+  border-radius: 20px;
+  height: 95px;
+  width: 45%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.inputs-box li {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 10%;
+}
+
+.inputs-box input {
+  width: 80%;
+  margin-top: 5px;
+}
+
+.inputs-box button {
+  margin-top: 2px;
+  height: 35px;
+  width: 120px;
+  background-color: rgb(79, 72, 71);
+  color: white;
+}
+
+
+/* Footer */
+footer {
+  border-color: rgb(79, 72, 71);
+  color: white;
+  font-size: 19px;
+  line-height: 60px;
+}
