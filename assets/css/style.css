@@ -1,6 +1,15 @@
+:root {
+  --color-bar: #266150;
+  --color-bg: #fdf8f5;
+  --color-border: #ddaf94;
+  --color-dark: #4f4847;
+  --color-nav-text: white;
+  --color-contact-bg: #e8cebf;
+}
+
 /* universal selector */
 * {
-  color: rgb(79, 72, 71);
+  color: var(--color-dark);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -20,14 +29,13 @@ header {
 }
 
 header, footer {
-  background-color: rgb(38, 97, 80);
+  background-color: var(--color-bar);
   height: 60px;
   width: 100%;
-  border-bottom: 10px solid rgb(221, 175, 148);
+  border-bottom: 10px solid var(--color-border);
 }
 
 /* class selector */
-
 /* Navigation bar */
 .nav-item {
   list-style-type: none;
@@ -42,7 +50,7 @@ header, footer {
 }
 
 .nav-item li a {
-  color: white;
+  color: var(--color-nav-text);
   font-size: 20px;
   line-height: 60px;
   text-decoration: none;
@@ -50,7 +58,7 @@ header, footer {
 
 /* Title and picture */
 .title {
-  background-color: rgb(253, 248, 245);
+  background-color: var(--color-bg);
   height: 560px;
 }
 
@@ -68,8 +76,8 @@ header, footer {
 /* Contact me section */
 .contact-me {
   height: 238px;
-  background-color: rgb(232, 206, 191);
-  border-top: 3px solid rgb(221, 175, 148);
+  background-color: var(--color-contact-bg);
+  border-top: 3px solid var(--color-border);
 }
 
 .contact-me h2 {
@@ -80,7 +88,7 @@ header, footer {
 
 /* Input container */
 .inputs-box {
-  border: 5px solid rgb(221, 175, 148);
+  border: 5px solid var(--color-border);
   border-radius: 20px;
   height: 95px;
   width: 45%;
@@ -103,15 +111,14 @@ header, footer {
   margin-top: 2px;
   height: 35px;
   width: 120px;
-  background-color: rgb(79, 72, 71);
-  color: white;
+  background-color: var(--color-dark);
+  color: var(--color-nav-text);
 }
-
 
 /* Footer */
 footer {
-  border-color: rgb(79, 72, 71);
-  color: white;
+  border-color: var(--color-dark);
+  color: var(--color-nav-text);
   font-size: 19px;
   line-height: 60px;
 }
